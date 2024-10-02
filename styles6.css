@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://previews.123rf.com/images/keltt/keltt1404/keltt140400043/27597962-tel%C3%B3n-de-fondo-de-color-amarillo-para-los-taxis-de-la-ciudad-fondo-de-transporte-urbano.jpg');
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: rgb(242, 241, 141);
+    margin: 0; /* Elimina el margen */
+    padding: 20px;
+    border: 2px solid yellow;
+    text-align: center;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+h1 {
+    color: yellow; /* Color dorado para el título */
+    text-shadow: 2px 2px 4px black; /* Efecto de sombra */
+    font-size: 36px; /* Tamaño del título */
+}
+
+p {
+    color: yellow; /* Cambia el color del texto aquí */
+    font-size: 36px; /* Mismo tamaño que el título */
+    text-shadow: 2px 2px 4px black; /* Efecto de sombra para que se vea mejor */
+}
+
+button {
+    background-color: yellow; /* Fondo amarillo para el botón */
+    color: black; /* Texto negro para el botón */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px; 
+    margin-top: 20px;
+    transition: background-color 0.3s; /* Suaviza la transición */
+}
+
+button:hover {
+    background-color: rgb(71, 238, 10); /* Cambia el color de fondo al pasar el mouse */
+}
