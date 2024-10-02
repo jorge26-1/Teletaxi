@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.frase {
+    font-size: 4em; 
+    text-align: center;
+    position: absolute; 
+    white-space: nowrap; 
+    animation: colorChange 5s infinite alternate, move 20s linear infinite; 
+    text-shadow: 2px 2px 5px rgb(255, 255, 255); 
+    z-index: 2;
+} 
+
+.frase-tele-taxi {
+    font-size: 2em; 
+    text-align: center;
+    position: absolute; 
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    text-align: center; 
+    white-space: normal;  
+    animation: colorChangeTeleTaxi 5s infinite alternate; 
+    text-shadow: 2px 2px 5px rgb(241, 161, 161); 
+    z-index: 2;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(230, 195, 0);
+    }
+    50% {
+        color: rgb(210, 21, 65);
+    }
+    100% {
+        color: rgb(226, 192, 0);
+    }
+}
+
+@keyframes colorChangeTeleTaxi {
+    0% {
+        color: #ffa704; 
+    }
+    100% {
+        color: #f8f400; 
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(100%);  
+    }
+}
+
+.video-movimiento {
+    position: absolute;
+    bottom: 20px; 
+    width: 450px; 
+    animation: slide 10s linear infinite; 
+    background-color: black; 
+    z-index: 1; 
+}
+
+.video-nieve {
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: 0; 
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-150%); 
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
