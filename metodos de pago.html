@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Pago - Servicio de Taxi</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/013/974/344/small_2x/taxi-service-logo-illustration-vector.jpg" alt="Logo Taxi" class="logo">
+    <h1>Métodos de Pago</h1>
+    <form action="file:///C:/Users/SENA/Downloads/ruta.html" method="POST">
+        <label>
+            <input type="radio" name="metodo-pago" value="efectivo" required>
+            <div class="metodo-pago">
+                <strong>Pago en Efectivo</strong>
+            </div>
+        </label>
+
+        <label>
+            <input type="radio" name="metodo-pago" value="nequi">
+            <div class="metodo-pago">
+                <img src="https://i.pinimg.com/564x/c9/9d/14/c99d1437635da2d96561a8e37f0d4d4e.jpg" alt="Logo Nequi">
+                <strong>Pago con Nequi</strong>
+            </div>
+        </label>
+
+        <label>
+            <input type="radio" name="metodo-pago" value="daviplata">
+            <div class="metodo-pago">
+                <img src="https://i.pinimg.com/originals/79/65/d1/7965d150c083d957b3f2ce17c6b52f55.jpg" alt="Logo Daviplata">
+                <strong>Pago con Daviplata</strong>
+            </div>
+        </label>
+
+        <label for="comentarios">Comentarios Adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ingresa comentarios adicionales"></textarea>
+
+        <button type="submit">Confirmar Pago</button>
+    </form>
+</body>
+</html>
