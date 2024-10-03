@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: orange; 
+    font-family: Arial, sans-serif;
+}
+
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0; 
+}
+
+.frase {
+    font-size: 4em; 
+    text-align: center;
+    position: absolute; 
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    white-space: nowrap; 
+    animation: colorChangeHalloween 10s infinite alternate, move 3s linear infinite; 
+    text-shadow: 2px 2px 5px rgba(200, 185, 185, 0.987);
+    z-index: 1; 
+}
+
+.frase-tele-taxi {
+    font-size: 2em; 
+    text-align: center;
+    position: absolute; 
+    top: 70%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    max-width: 80%;
+    text-align: center; 
+    white-space: normal; 
+    animation: colorChangeTeleTaxi 10s infinite alternate, move 6s linear infinite; 
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.987);
+    z-index: 1; 
+}
+
+@keyframes colorChangeHalloween {
+    0% {
+        color: rgb(84, 0, 133);
+    }
+    50% {
+        color: rgb(214, 115, 2);
+    }
+    100% {
+        color: #fba002;
+    }
+}
+
+@keyframes colorChangeTeleTaxi {
+    0% {
+        color: #e5ff00; 
+    }
+    50% {
+        color: gold;
+    }
+    100% {
+        color: #fff9f9; 
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    50% {
+        transform: translate(-50%, 0); 
+    }
+    100% {
+        transform: translate(-50%, -100%); 
+    }
+}
+
+.gif {
+    position: absolute;
+    width: 190px; 
+    z-index: 1; 
+}
+
+.gif-left {
+    left: 20px; 
+    top: 20px; 
+}
+
+.gif-right {
+    right: 20px; 
+    bottom: 20px; 
+}
