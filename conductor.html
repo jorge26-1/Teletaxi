@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Elegir Conductor</h1>
-    <form action="metodos_de_pago.html" method="POST">
+     <form onsubmit="event.preventDefault(); location.href='metodos_de_pago.html';">
+    
         <label>
             <input type="radio" name="conductor" value="conductor1" required>
             <div class="conductor">
